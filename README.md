@@ -19,7 +19,7 @@ contracts/BullBrewNFT.sol
 
 
 
-# What This Contract Does ---------------------------------------------
+# What This Contract Does:
 
 The contract allows:
 * Public minting when the owner opens minting
@@ -31,7 +31,7 @@ The contract allows:
 
 Requirements
 
-# Install the following: ------------------------------------------------
+# Install the following: 
 
 * Node.js
 * Git
@@ -41,7 +41,7 @@ Requirements
 * OpenZeppelin Contracts
 
 
-# Setup Instructions: ----------------------------------------------------
+# Setup Instructions:
 
 # 1) Clone the repository:
 
@@ -101,7 +101,7 @@ main().catch((error) => {
 });
 
 
-# 9) Hardhat Config
+# 9) Hardhat Config:
 
 In:
 
@@ -134,7 +134,7 @@ module.exports = {
 npm install --save-dev @nomicfoundation/hardhat-toolbox dotenv
 
 
-# 11) Environment Variables
+# 11) Environment Variables:
 
 Create a file named:
 .env
@@ -157,19 +157,19 @@ artifacts
 cache
 
 
-# 14) Compile the Contract
+# 14) Compile the Contract:
 
 Run:
 npx hardhat compile
 
 
-# 15) Deploy to Polygon Amoy Testnet
+# 15) Deploy to Polygon Amoy Testnet:
 
 Run:
 npx hardhat run scripts/deploy.js --network amoy
 
 
-# 16) Deploy to Polygon Mainnet
+# 16) Deploy to Polygon Mainnet:
 
 (Only deploy to mainnet after testing.)
 
