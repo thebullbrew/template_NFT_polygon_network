@@ -43,44 +43,45 @@ Requirements
 
 # Setup Instructions: ----------------------------------------------------
 
-1) Clone the repository:
+# 1) Clone the repository:
 
 git clone YOUR_REPOSITORY_URL
 cd template_NFT_polygon_network
 
 
-2) Install dependencies:
+# 2) Install dependencies:
 
 npm install
 
 
-3) Install Hardhat:
+# 3) Install Hardhat:
 
 npm install --save-dev hardhat
 
 
-4) Install OpenZeppelin:
+# 4) Install OpenZeppelin:
 
 npm install @openzeppelin/contracts
 
 
-5) Create a Hardhat project:
+# 5) Create a Hardhat project:
 
 npx hardhat init
 
-6) Choose:
+
+# 6) Choose:
 
 Create a JavaScript project
 
 
-7) Deployment Script:
+# 7) Deployment Script:
 
 Create this file:
 scripts/deploy.js
 
-8) Paste:
 
-Javascript
+
+# 8) Paste:
 
 const hre = require("hardhat");
 
@@ -100,9 +101,7 @@ main().catch((error) => {
 });
 
 
-
-
-9) Hardhat Config
+# 9) Hardhat Config
 
 In:
 
@@ -112,7 +111,6 @@ hardhat.config.js
 Use:
 
 require("@nomicfoundation/hardhat-toolbox");
-
 require("dotenv").config();
 
 module.exports = {
@@ -131,28 +129,27 @@ module.exports = {
 
 
 
-10) Install required packages:
+# 10) Install required packages:
 
 npm install --save-dev @nomicfoundation/hardhat-toolbox dotenv
 
 
-11) Environment Variables
+# 11) Environment Variables
 
 Create a file named:
-
 .env
 
 
-12) Add:
+# 12) Add:
 
 PRIVATE_KEY=your_wallet_private_key_here
 POLYGON_AMOY_RPC_URL=your_polygon_amoy_rpc_url_here
 POLYGON_MAINNET_RPC_URL=your_polygon_mainnet_rpc_url_here
 
+(Important: never upload your .env file to GitHub.)
 
-Important: never upload your .env file to GitHub.
 
-13) Create a .gitignore file and add:
+# 13) Create a .gitignore file and add:
 
 node_modules
 .env
@@ -160,33 +157,29 @@ artifacts
 cache
 
 
-14) Compile the Contract
+# 14) Compile the Contract
 
 Run:
-
 npx hardhat compile
 
 
-Deploy to Polygon Amoy Testnet
+# 15) Deploy to Polygon Amoy Testnet
 
 Run:
-
 npx hardhat run scripts/deploy.js --network amoy
 
 
-Deploy to Polygon Mainnet
+# 16) Deploy to Polygon Mainnet
 
-Only deploy to mainnet after testing.
+(Only deploy to mainnet after testing.)
 
 npx hardhat run scripts/deploy.js --network polygon
 
-
 After Deployment:
-
 Copy the contract address.
 
 
-You can use it to:
+# You can use it to:
 
 * View the contract on PolygonScan
 * Verify the contract
@@ -197,7 +190,7 @@ You can use it to:
 
 
 
-Security Notes:
+# Security Notes:
 
 - Do not share your private key.
 - Do not commit .env to GitHub.
